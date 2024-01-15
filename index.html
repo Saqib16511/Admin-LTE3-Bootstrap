@@ -13,20 +13,258 @@
         <div class="row flex-nowrap">
             <!-- SIDEBAR -->
             <div class="col-auto px-0 bg-dark text-secondary min-vh-100">
-                <div id="sidebar" class="collapse collapse-horizontal border-end">
-                    <div id="sidebar-nav" class="h3 collapse-nav">
-                        <ul class="navbar-nav position-sticky">
-                            <li class="nav-list border py-2">
+                <div id="sidebar" class="collapse  collapse-horizontal border-end">
+                    <div id="sidebar-nav" class="collapse-nav"">
+                        <ul class="navbar-nav position-sticky mx-1 bg-dark">
+                            <li class="nav-list collapse collapse-horizontal position-sticky show  py-2 container">
                                 <i class="bi bi-p-circle-fill"></i>
                                 <span>AdminLTE 3</span>
                             </li>
-                            <li class="nav-list border py-3">
+                            <li class="nav-list border-bottom border-top py-3 container">
                                 <img src="https://wallpapercave.com/wp/wp12055879.jpg" class="rounded-circle" alt="">
                                 <span>Eren Yeager</span>
                             </li>
-                            <li class="nav-list border py-2">
-                                <input type="search" class="bg-dark" placeholder="search">
-                                <i class="bi bi-search"></i>
+                            <li class="nav-list py-2 input-group">
+                                <input type="text" class="input-group-text bg-dark" placeholder="search">
+                                <span class="input-group-text">
+                                    <i class="bi bi-search"></i>
+                                </span>
+                            </li>
+                            <li class="nav-list accordion">
+                                <div class="accordion-item border-0 bg-dark">
+                                    <button class="accordion-button bg-dark text-secondary" data-bs-toggle="collapse" data-bs-target="#dashcoll">
+                                        <span>
+                                            <i class="bi bi-speedometer2"></i> Dashboard
+                                        </span>
+                                    </button>
+                                    <div id="dashcoll" class="accordion-collapse collapse bg-dark text-secondary">
+                                        <div class="accordion-body">
+                                            <span><input type="radio"/> Dashboard v1
+                                        </span>
+                                        </div>
+                                    </div>
+                                    <div id="dashcoll" class="accordion-collapse collapse bg-dark">
+                                        <div class="accordion-body">
+                                            <span><input type="radio"/> Dashboard v2
+                                        </span>
+                                        </div>
+                                    </div>
+                                    <div id="dashcoll" class="accordion-collapse collapse bg-dark">
+                                        <div class="accordion-body">
+                                            <span><input type="radio"/> Dashboard v3
+                                        </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-list d-flex justify-content-between container pt-3 ps-4">
+                                <span>
+                                    <i class="bi bi-grid-3x3-gap-fill"></i> Widgets
+                                </span>
+                                <span class="badge bg-danger mt-2">new</span>
+                            </li>
+                            <li class="nav-list accordion">
+                                <div class="accordion-item bg-dark text-secondary border-0">
+                                    <button class="accordion-button bg-dark text-secondary" data-bs-toggle="collapse" data-bs-target="#dashcoll1">
+                                        <span>
+                                            <i class="bi bi-file-earmark-fill"></i> Layout Options
+                                        </span>
+                                    </button>
+                                    <div id="dashcoll1" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <span><input type="radio"/> Top Navigation
+                                        </span>
+                                        </div>
+                                    </div>
+                                    <div id="dashcoll1" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <span><input type="radio"/> Top Navigation + Sidebar
+                                        </span>
+                                        </div>
+                                    </div>
+                                    <div id="dashcoll1" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <span><input type="radio"/> Boxed
+                                        </span>
+                                        </div>
+                                    </div>
+                                    <div id="dashcoll1" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <span><input type="radio"/> Fixed Sidebar
+                                        </span>
+                                        </div>
+                                    </div>
+                                    <div id="dashcoll1" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <span><input type="radio"/> Fixed Sidebar + cutom Area
+                                        </span>
+                                        </div>
+                                    </div>
+                                    <div id="dashcoll1" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <span><input type="radio"/> Fixed Navbar
+                                        </span>
+                                        </div>
+                                    </div>
+                                    <div id="dashcoll1" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <span><input type="radio"/> Fixed Footer
+                                        </span>
+                                        </div>
+                                    </div><div id="dashcoll1" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <span><input type="radio"/> Collapsed Sidebar
+                                        </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-list accordion">
+                                <div class="accordion-item bg-dark text-secondary border-0">
+                                    <button class="accordion-button bg-dark text-secondary" data-bs-toggle="collapse" data-bs-target="#dashcoll2">
+                                        <span>
+                                            <i class="bi bi-pie-chart-fill"></i> Charts
+                                        </span>
+                                    </button>
+                                    <div id="dashcoll2" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <span><input type="radio"/> ChartsJS
+                                        </span>
+                                        </div>
+                                    </div>
+                                    <div id="dashcoll2" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <span><input type="radio"/> Flot
+                                        </span>
+                                        </div>
+                                    </div>
+                                    <div id="dashcoll2" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <span><input type="radio"/> Inline
+                                        </span>
+                                        </div>
+                                    </div>
+                                    <div id="dashcoll2" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <span><input type="radio"/> uPlot
+                                        </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-list accordion">
+                                <div class="accordion-item bg-dark text-secondary border-0">
+                                    <button class="accordion-button bg-dark text-secondary" data-bs-toggle="collapse" data-bs-target="#dashcoll3">
+                                        <span>
+                                            <i class="bi bi-tree-fill"></i> UI Elemnts
+                                        </span>
+                                    </button>
+                                    <div id="dashcoll3" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <span><input type="radio"/> General
+                                        </span>
+                                        </div>
+                                    </div>
+                                    <div id="dashcoll3" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <span><input type="radio"/> Icons
+                                        </span>
+                                        </div>
+                                    </div>
+                                    <div id="dashcoll3" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <span><input type="radio"/> Buttons
+                                        </span>
+                                        </div>
+                                    </div>
+                                    <div id="dashcoll3" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <span><input type="radio"/> Sliders
+                                        </span>
+                                        </div>
+                                    </div>
+                                    <div id="dashcoll3" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <span><input type="radio"/> Modals & Alerts
+                                        </span>
+                                        </div>
+                                    </div>
+                                    <div id="dashcoll3" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <span><input type="radio"/> Navbar & Tabs
+                                        </span>
+                                        </div>
+                                    </div>
+                                    <div id="dashcoll3" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <span><input type="radio"/> Timeline
+                                        </span>
+                                        </div>
+                                    </div>
+                                    <div id="dashcoll3" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <span><input type="radio"/> Ribbons
+                                        </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-list accordion">
+                                <div class="accordion-item bg-dark text-secondary border-0">
+                                    <button class="accordion-button bg-dark text-secondary" data-bs-toggle="collapse" data-bs-target="#dashcoll4">
+                                        <span>
+                                            <i class="bi bi-check2-square"></i> Forms
+                                        </span>
+                                    </button>
+                                    <div id="dashcoll4" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <span><input type="radio"/> General Elements
+                                        </span>
+                                        </div>
+                                    </div>
+                                    <div id="dashcoll4" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <span><input type="radio"/> Advance Elements
+                                        </span>
+                                        </div>
+                                    </div>
+                                    <div id="dashcoll4" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <span><input type="radio"/> Editors                                        </span>
+                                        </div>
+                                    </div>
+                                    <div id="dashcoll4" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <span><input type="radio"/> Validation</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-list accordion">
+                                <div class="accordion-item bg-dark text-secondary border-0">
+                                    <button class="accordion-button bg-dark text-secondary" data-bs-toggle="collapse" data-bs-target="#dashcoll5">
+                                        <span>
+                                            <i class="bi bi-table"></i> Table
+                                        </span>
+                                    </button>
+                                    <div id="dashcoll5" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <span><input type="radio"/> Simple Tables
+                                        </span>
+                                        </div>
+                                    </div>
+                                    <div id="dashcoll5" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <span><input type="radio"/> DataTable
+                                        </span>
+                                        </div>
+                                    </div>
+                                    <div id="dashcoll5" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <span><input type="radio"/> jsGrid                                        </span>
+                                        </div>
+                                    </div>
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -79,9 +317,12 @@
                 <div class="container-fluid d-flex justify-content-between px-3 my-2" >
                     <div class="h2">Dashboard</div>
                     <div>
-                        <a href="#">Home</a>
-                        <span>/</span>
-                        <a>Dashboard v1</a>
+                        <nav class="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a class="text-decoration-none" href="#">Home</a></li>
+                                <li class="breadcrumb-item">Dashboard</li>
+                            </ol>
+                        </nav>
                     </div>
                 </div>
                 <div class="container-fluid row text-white">
